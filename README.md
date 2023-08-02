@@ -1,4 +1,4 @@
-# pibc : Extract Data from Foodstation.id
+# pibc : Extract Data from Pasar Induk Beras Cipinang
 
 [Pasar Induk Beras Cipinang (PIBC)](https://www.foodstation.id) 
 
