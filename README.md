@@ -11,10 +11,18 @@ devtools::install_github("aephidayatuloh/pibc")
 
 ## Usage
 
-```
+``` 
 library(pibc)
-price(from = "2023-07-13", to = "2023-07-31")
+price(from = "2023-07-30", to = "2023-07-31")
+#> # A tibble: 2 × 15
+#>   Tanggal    `Cianjur Kepala` `Cianjur Slyp` `Sentra Ramos` Saigon `Muncul I`
+#>   <date>                <dbl>          <dbl>          <dbl>  <dbl>      <dbl>
+#> 1 2023-07-31            15450          15075          14225  12800      11800
+#> 2 2023-07-30            15450          15075          14225  12800      11800
+#> # ℹ 9 more variables: `Muncul II` <dbl>, `Muncul III` <dbl>, `IR-64 I` <dbl>,
+#> #   `IR-64 II` <dbl>, `IR-64 III` <dbl>, `IR-42` <dbl>,
+#> #   `Ketan Putih Lokal` <dbl>, `Ketan Putih (Paris)` <dbl>, `Ketan Hitam` <dbl>
 ```
 
-If you run the code above, after the process finished you will have the script file named `sendgmail.R` in `myfolder` folder. But, if the script in the article in a output-block part (this usually in a box with white background, different writing style from writer) then use `output = TRUE` to make the output-block part of script output file.
+<sup>Created on 2023-08-02 with [reprex v2.0.2](https://reprex.tidyverse.org)</sup>
 
