@@ -16,23 +16,14 @@
 #'
 #' @export
 price <- function(from, to = Sys.Date()){
-  tryCatch(
-    {
-      from <- as.Date(from)
-      to <- as.Date(to)
-    },
-    error = function(e){
-      message("Error:")
-      print(e)
-    }
-    )
   from <- as.Date(from)
   to <- as.Date(to)
 
   pibc_harga <- "https://foodstation.id/api/index.php?id=hargaberas"
   tbl_harga <- pibc_harga |>
     POST(
-      body = list(tgl = format(from, "%d-%m-%Y"), tgl2 = format(to, "%d-%m-%Y")),
+      body = list(tgl = format(from, "%d-%m-%Y"),
+                  tgl2 = format(to, "%d-%m-%Y")),
       user_agent("httr")
     ) |>
     content() |>
