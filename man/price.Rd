@@ -15,7 +15,7 @@ price(from, to = Sys.Date())
 Get the price of rice within period.
 }
 \examples{
-price(from = "2023-07-13", to = "2023-07-31")
+price(from = "2023-07-30", to = "2023-07-31")
 
 
 

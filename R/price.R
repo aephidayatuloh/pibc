@@ -5,7 +5,7 @@
 #' @description Get the price of rice within period.
 #' @importFrom rvest read_html html_element html_table
 #' @importFrom httr POST user_agent content
-#' @importFrom dplyr mutate slice across
+#' @importFrom dplyr mutate filter across
 #' @importFrom readr parse_number
 #' @param from start period data extraction format yyyy-mm-dd
 #' @param to end period data extraction format yyyy-mm-dd
@@ -31,10 +31,10 @@ price <- function(from, to = Sys.Date()){
     html_table()
 
   harga_colnm <- tbl_harga |>
-    slice(2)
+    filter(X1 == "Tanggal")
 
   tbl_harga <- tbl_harga |>
-    slice(-1*1:2) |>
+    filter(!X1 %in% c("(Dalam Rp)", "Tanggal")) |>
     mutate(
       X1 = as.Date(X1, format = "%d-%b-%Y"),
       across(X2:X15, .fns = parse_number)
