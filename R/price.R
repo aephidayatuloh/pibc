@@ -10,7 +10,7 @@
 #' @param from start period data extraction format yyyy-mm-dd
 #' @param to end period data extraction format yyyy-mm-dd
 #' @examples
-#' price(from = "2023-07-13", to = "2023-07-31")
+#' price(from = "2023-07-30", to = "2023-07-31")
 #'
 #'
 #'

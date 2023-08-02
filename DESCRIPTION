@@ -9,9 +9,11 @@ Maintainer: Aep Hidayatuloh <aef.stk@gmail.com>
 Description: Web scrape rice price and stock from Pasar Induk Besar Cipinang <https://www.foodstation.id/>.
 License: MIT + file LICENSE
 URL: https://github.com/aephidayatuloh/pibc
+BugReport: https://github.com/aephidayatuloh/pibc/issue
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 4.1.0)
+Imports: dplyr (>= 1.1.2), httr (>= 1.4.6), readr (>= 2.1.4), rvest (>= 1.0.3), purrr (>= 1.0.0)
 Suggests: 
     testthat (>= 2.1.0)
 RoxygenNote: 7.2.3
