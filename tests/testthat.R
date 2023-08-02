@@ -1,4 +1,4 @@
 library(testthat)
-library(rpubs)
+library(pibc)
 
-test_check("rpubs")
+test_check("pibc")
