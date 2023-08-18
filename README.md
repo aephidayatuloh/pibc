@@ -18,7 +18,7 @@ library(pibc)
 price(from = "2023-07-30", to = "2023-07-31")
 ```
 
-Extract stock history on a month or whole current year
+Extract historical stock on a month or whole current year
 
 ``` 
 library(pibc)
