@@ -8,6 +8,7 @@
 #' @importFrom dplyr mutate filter across select
 #' @importFrom purrr map_dfr
 #' @importFrom readr parse_number
+#' @importFrom utils head
 #' @param m    integer indicate month. January = 1 and December = 12. You can omit `m` to get all stock data current year.
 #' @examples
 #' # to extract stock history on January current year (i.e 2023)
