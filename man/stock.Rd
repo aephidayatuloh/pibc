@@ -7,7 +7,7 @@
 stock(m = NULL)
 }
 \arguments{
-\item{m}{integer indicate month. January = 1, and December = 12. You can omit `m` to get all stock data current year.}
+\item{m}{integer indicate month. January = 1 and December = 12. You can omit `m` to get all stock data current year.}
 }
 \description{
 Get the price of rice in a month current year.
